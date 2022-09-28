@@ -1,0 +1,55 @@
+{
+  "name": "@kalesberg/uikit",
+  "version": "1.1.4",
+  "description": "",
+  "author": "Tokemak",
+  "license": "MIT",
+  "keywords": [],
+  "main": "src/index.ts",
+  "files": [
+    "dist/**/*",
+    "README.md",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "NODE_ENV=production BABEL_ENV=production rollup -c",
+    "watch": "rollup -c -w"
+  },
+  "dependencies": {
+    "@vanilla-extract/css": "^1.9.1",
+    "@vanilla-extract/recipes": "^0.2.5",
+    "@vanilla-extract/sprinkles": "^1.5.0",
+    "clsx": "^1.1.1",
+    "csstype": "^3.1.0",
+    "polished": "^4.2.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.5",
+    "@babel/preset-env": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "@rollup/plugin-babel": "^5.3.1",
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-image": "^2.1.1",
+    "@rollup/plugin-url": "^7.0.0",
+    "@svgr/rollup": "^6.2.1",
+    "@types/react": "^18.0.18",
+    "@types/react-dom": "^18.0.6",
+    "@typescript-eslint/eslint-plugin": "^5.28.0",
+    "@typescript-eslint/parser": "^5.28.0",
+    "@vanilla-extract/babel-plugin": "^1.1.7",
+    "@vanilla-extract/dynamic": "^2.0.2",
+    "@vanilla-extract/rollup-plugin": "^1.1.0",
+    "rimraf": "^3.0.2",
+    "rollup": "^2.75.6",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-styles": "^4.0.0",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript2": "^0.32.1",
+    "typescript": "^4.7.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

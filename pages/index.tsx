@@ -2,6 +2,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { textSample } from './styles.css'
+import { Spinner } from '@kalesberg/uikit'
 
 const Home: NextPage = () => {
   return (
@@ -18,7 +20,8 @@ const Home: NextPage = () => {
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
+          <Spinner />
+          <span className={textSample}>Get started by editing{' '}</span>
           <code className={styles.code}>pages/index.tsx</code>
         </p>
 

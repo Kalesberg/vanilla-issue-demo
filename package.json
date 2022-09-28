@@ -6,9 +6,13 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lerna": "lerna"
   },
   "dependencies": {
+    "@vanilla-extract/css": "^1.9.1",
+    "@vanilla-extract/next-plugin": "^2.1.0",
+    "lerna": "^5.5.2",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
@@ -20,5 +24,8 @@
     "eslint": "8.24.0",
     "eslint-config-next": "12.3.1",
     "typescript": "4.8.4"
-  }
+  },
+  "workspaces": [
+    "packages/*"
+  ]
 }
