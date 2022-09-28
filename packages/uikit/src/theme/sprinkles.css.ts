@@ -15,8 +15,6 @@ const unresponsiveProperties = defineProperties({
 
 const colorModeProperties = defineProperties({
   conditions: {
-    //   lightMode: {'@media': '(prefers-color-scheme: light)'},
-    //   darkMode: { '@media': '(prefers-color-scheme: dark)' },
     darkMode: {},
   },
   defaultCondition: 'darkMode',
